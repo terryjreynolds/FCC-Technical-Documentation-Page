@@ -1,21 +1,63 @@
 body {
-  background: rgb(255, 255, 255);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  background: whitesmoke;
+  font-family: "Roboto", sans-serif;
 }
 #main-doc {
+  display: flex;
+  flex-direction: column;
+  width: 79%;
+  height: auto;
+  padding-left: 21%;
 }
-.main-section {
-  grid-area: 2;
+.section-headers {
+  font-size: 4vh;
+  color: #83d0f2;
+  text-shadow: 0.09vh 0.09vh rgb(80, 98, 144);
+  margin-top: 5vh;
 }
 p {
-  color: rgb(40, 44, 52);
+  font-size: 2.8vh;
+  text-shadow: 0.01vh 0.01vh rgb(40, 44, 52);
+  color: rgb(80, 98, 144);
+}
+code {
+  background: rgb(221, 221, 221);
 }
 #navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: flex-start;
+  text-align: start;
   background: rgb(40, 44, 52);
   color: #83d0f2;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+}
+#nav-header {
+  font-size: 4vh;
+  padding-top: 5vh;
+  text-align: center;
+  text-shadow: 0.001vh 0.001vh whitesmoke;
 }
 a {
+  font-size: 3vh;
+  padding-left: 1.5vh;
+  padding-bottom: 1.2vh;
   color: #83d0f2;
+  border-bottom: solid 0.1vh whitesmoke;
   text-decoration: none;
+}
+#last-section {
+  margin-bottom: 100vh;
+}
+footer {
+  margin-bottom: 50vh;
+}
+#footerText {
+  font-size: 1.2vw;
+  color: whitesmoke;
 }
