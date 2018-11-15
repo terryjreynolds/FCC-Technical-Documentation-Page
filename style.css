@@ -7,16 +7,24 @@ body {
   flex-direction: column;
   width: 79%;
   height: auto;
-  padding-left: 21%;
+  padding-left: 19%;
 }
 .section-headers {
   font-size: 4vh;
   color: #83d0f2;
-  text-shadow: 0.09vh 0.09vh rgb(80, 98, 144);
+  text-shadow: 0.15vh 0.15vh rgb(40, 44, 52);
   margin-top: 5vh;
 }
 p {
+  list-style: none;
+  margin-top: 1.5vh;
+  margin-bottom: 4vh;
   font-size: 2.8vh;
+  text-shadow: 0.01vh 0.01vh rgb(40, 44, 52);
+  color: rgb(80, 98, 144);
+}
+li {
+  margin: 1vh;
   text-shadow: 0.01vh 0.01vh rgb(40, 44, 52);
   color: rgb(80, 98, 144);
 }
@@ -34,7 +42,7 @@ code {
   position: fixed;
   left: 0;
   top: 0;
-  width: 20%;
+  width: 18%;
   height: 100%;
 }
 #nav-header {
@@ -43,7 +51,7 @@ code {
   text-align: center;
   text-shadow: 0.001vh 0.001vh whitesmoke;
 }
-a {
+.nav-link {
   font-size: 3vh;
   padding-left: 1.5vh;
   padding-bottom: 1.2vh;
@@ -51,13 +59,62 @@ a {
   border-bottom: solid 0.1vh whitesmoke;
   text-decoration: none;
 }
-#last-section {
-  margin-bottom: 100vh;
-}
 footer {
+  margin-top: 25vh;
   margin-bottom: 50vh;
 }
 #footerText {
-  font-size: 1.2vw;
-  color: whitesmoke;
+  font-size: 2vh;
+  color: #83d0f2;
+  text-align: center;
+  background: rgb(40, 44, 52);
+  outline: solid 0.01vh #83d0f2;
+}
+#terry {
+  color: #83d0f2;
+}
+/* -----------------------Media Queries------------------------*/
+
+/* ipad and below */
+@media (max-width: 1024px) {
+  .nav-link {
+    font-size: 2vh;
+    padding-bottom: 1.2vh;
+    color: #83d0f2;
+    text-decoration: none;
+    border-bottom: none;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background: rgb(40, 44, 52);
+    color: #83d0f2;
+    position: fixed;
+    padding-top: 2.6vh;
+    top: 0;
+    width: 100%;
+    height: 5.9%;
+    font-size: 0.2vw;
+  }
+  #nav-header {
+    top: 0;
+    padding-top: 1.5vh;
+    position: fixed;
+    font-size: 2.9vh;
+    text-align: center;
+    text-shadow: 0.001vh 0.001vh whitesmoke;
+  }
+  #main-doc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1vw;
+    height: auto;
+  }
+  .section-headers {
+    margin-top: 1vh;
+    padding-top: 8vh;
+  }
 }

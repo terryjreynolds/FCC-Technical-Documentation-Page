@@ -26,17 +26,17 @@
     <nav id="navbar">
         <header id="nav-header">JavaScript Array Methods
         </header>
-        <a href="#array">Array</a>
-        <a href="#filter">Filter</a>
-        <a href="#map">Map</a>
-        <a href="#reduce">Reduce</a>
-        <a href="#push">Push</a>
-        <a href="#shift">Shift</a>
+        <a href="#array" class="nav-link">Array</a>
+        <a href="#filter" class="nav-link">filter</a>
+        <a href="#map" class="nav-link">map</a>
+        <a href="#reduce" class="nav-link">reduce</a>
+        <a href="#push" class="nav-link">push</a>
+        <a href="#shift" class="nav-link">shift</a>
     </nav>
 
     <main id="main-doc">
-        <section class="main-section">
-            <header id="array" class="section-headers">Array</header>
+        <section id="array" class="main-section">
+            <header class="section-headers">Array</header>
             <p>Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations.
                 Neither the
                 length of a JavaScript array nor the types of its elements are fixed. Since an array's length can
@@ -55,14 +55,18 @@
                 properties and list of array elements are separate, and the array's traversal and mutation operations
                 cannot be applied
                 to these named properties.</p>
+
             <code>var fruits = ['Apple', 'Banana'];
+                        
+                        console.log(fruits.length);
+                        // 2</code>
+           
+                <p>Array properties include: <ul><li>Array.length</li><li>Array.prototype</li><li>Array.prototype[@@unscopables]</li></ul></p>
             
-            console.log(fruits.length);
-            // 2</code>
 
         </section>
-        <section class="main-section">
-            <header id="filter" class="section-headers">Array.prototype.filter</header>
+        <section id="filter" class="main-section">
+            <header class="section-headers">filter</header>
             <p>The filter() method creates a new array with all elements that pass the test implemented by the provided
                 function.</p>
             <p>filter() calls a provided callback function once for each element in an array, and constructs a new array
@@ -80,8 +84,8 @@
                         console.log(result);
                         // expected output: Array ["exuberant", "destruction", "present"]</code>
         </section>
-        <section class="main-section">
-            <header id="map" class="section-headers">Array.prototype.map</header>
+        <section id="map" class="main-section">
+            <header class="section-headers">map</header>
             <p>The map() method creates a new array with the results of calling a provided function on every element in
                 the calling
                 array.</p>
@@ -99,13 +103,15 @@
             
             console.log(map1);
             // expected output: Array [2, 8, 18, 32]</code>
+
+            <p>Map returns the following:<ul><li>Current element</li><li>Index of current element</li><li>The original array itself</li></ul></p>
         </section>
-        <section class="main-section">
-            <header id="reduce" class="section-headers">Array.prototype.reduce</header>
+        <section id="reduce" class="main-section">
+            <header class="section-headers">reduce</header>
             <p>The reduce() method executes a reducer function (that you provide) on each member of the array resulting
                 in a single
                 output value.</p>
-            <p></p>
+            
             <code>const array1 = [1, 2, 3, 4];
             const reducer = (accumulator, currentValue) => accumulator + currentValue;
             
@@ -117,8 +123,8 @@
             console.log(array1.reduce(reducer, 5));
             // expected output: 15</code>
         </section>
-        <section class="main-section">
-            <header id="push" class="section-headers">Array.prototype.push</header>
+        <section id="push"class="main-section">
+            <header class="section-headers">push</header>
             <p>The push() method adds one or more elements to the end of an array and returns the new length of the
                 array.</p>
             <p>push is intentionally generic. This method can be used with call() or apply() on objects resembling
@@ -141,8 +147,8 @@
             console.log(animals);
             // expected output: Array ["pigs", "goats", "sheep", "cows", "chickens"]</code>
         </section>
-        <section class="main-section" id="last-section">
-            <header id="shift" class="section-headers">Array.prototype.shift</header>
+        <section id="shift" class="main-section" id="last-section">
+            <header class="section-headers">shift</header>
             <p>The shift() method removes the first element from an array and returns that removed element. This method
                 changes the
                 length of the array.</p>
@@ -160,11 +166,12 @@
             // expected output: 1</code>
           
         </section>
-        <div id="footer">
-            <p id="footerText">Copyright, 2018. <a href="https://terryjreynolds.github.io" target="_blank" id="terry">Terry
+        <footer>
+            <p id="footerText">MDN 2018 content assembled by<a href="https://terryjreynolds.github.io" target="_blank" id="terry">
+                    Terry
                     Reynolds</a></p>
         
-        </div>
+        </footer>
 
 
     </main>
